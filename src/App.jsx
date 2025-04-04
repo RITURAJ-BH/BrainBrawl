@@ -4,6 +4,8 @@ import Landing from './pages/Landing'
 import CreateQuiz from './pages/CreateQuiz';
 import { useEffect } from 'react';
 import ScrollToTop from './components/ScrollToTop';
+import Quiz from './pages/Quiz';
+import Loading from './components/Loading';
 
 function App() {
   // Set theme once when app mounts
@@ -20,6 +22,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing/>}/>
         <Route path='/create-quiz' element={<CreateQuiz/>}/>
+        <Route path='/quiz' element={<Quiz/>}/>
+        <Route path='loading' element={<Loading/>}/>
       </Routes>
 
    

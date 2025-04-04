@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Landing from './pages/Landing';
+import React, { useEffect } from 'react';
 
 function App() {
   // Set theme once when app mounts
@@ -15,6 +16,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
+  
       </Routes>
 
    

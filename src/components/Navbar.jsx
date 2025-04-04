@@ -5,8 +5,8 @@ import ThemeToggle from './ThemeToggle'
 
 const Navbar = () => {
   return (
-    <div>
-<nav className="fixed top-0 left-0 w-full bg-white/50 backdrop-blur-lg shadow-lg border-b border-gray-200 dark:bg-black dark:border-gray-700 z-15">
+    <div className='pt-20'>
+<nav className=" fixed top-0 left-0 w-full bg-white/50 backdrop-blur-lg shadow-lg border-b border-gray-200 dark:bg-black dark:border-gray-700 z-15">
         <div className='flex flex-row items-center p-0 justify-evenly'>
         <div className='flex flex-row items-center gap-2'>
         <img className='w-18 h-18 p-0' src="https://static.vecteezy.com/system/resources/thumbnails/010/789/831/small_2x/cute-cartoon-brain-brain-illustration-png.png" alt="" />

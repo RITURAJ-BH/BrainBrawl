@@ -1,7 +1,10 @@
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import './App.css'
 import Landing from './pages/Landing'
+import CreateQuiz from './pages/CreateQuiz';
 
+import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
+        
 function App() {
   document.documentElement.classList.toggle(
     "dark",
@@ -19,6 +22,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing/>}/>
+        <Route path='/create-quiz' element={<CreateQuiz/>}/>
       </Routes>
     </BrowserRouter>
     </>

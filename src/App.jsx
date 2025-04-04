@@ -1,7 +1,9 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css';
-import Landing from './pages/Landing';
-import React, { useEffect } from 'react';
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+import './App.css'
+import Landing from './pages/Landing'
+import CreateQuiz from './pages/CreateQuiz';
+import { useEffect } from 'react';
+        import React, { useEffect } from 'react';
 
 function App() {
   // Set theme once when app mounts
@@ -15,8 +17,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Landing />} />
-  
+        <Route path="/" element={<Landing/>}/>
+        <Route path='/create-quiz' element={<CreateQuiz/>}/>
       </Routes>
 
    

@@ -2,7 +2,7 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <section
+    <section id="pricing"
       className="min-h-screen flex items-center justify-center bg-white dark:bg-black dark:text-gray-300 text-gray-700 p-6"
       style={{ marginTop: "-80px" }}
     >
@@ -22,7 +22,7 @@ const Pricing = () => {
             <li>✅ Upload Files</li>
             <li>✅ Custom Styles</li>
           </ul>
-          <button className="mt-6 w-full bg-purple-600 hover:bg-purple-500 dark:text-gray-300 text-gray-700 py-2 px-4 rounded-lg transition-all duration-300">
+          <button className="mt-6 w-full bg-purple-600 hover:bg-purple-500 dark:text-gray-300 text-gray-700 py-2 px-4 rounded-lg transition-all duration-300 hover:cursor-pointer">
             🚀 Try 7 Days Free
           </button>
         </div>
@@ -45,7 +45,7 @@ const Pricing = () => {
             <li>✅ Upload Files</li>
             <li>✅ Custom Styles</li>
           </ul>
-          <button className="mt-6 w-full bg-yellow-500 hover:bg-yellow-400 text-black py-2 px-4 rounded-lg transition-all duration-300">
+          <button className="mt-6 w-full bg-yellow-500 hover:bg-yellow-400 text-black py-2 px-4 rounded-lg transition-all duration-300 hover:cursor-pointer">
             🌟 Try 7 Days Free
           </button>
         </div>

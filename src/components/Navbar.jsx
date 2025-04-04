@@ -15,9 +15,9 @@ const Navbar = () => {
         </div>
         <div className="flex items-center gap-10 p-0">
         <p className="text-xl font-ubuntu text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:cursor-pointer transition-colors"><Link to ="/create-quiz">Quiz</Link></p>
-<p className="text-xl font-ubuntu text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:cursor-pointer transition-colors">Pricing</p>
-<p className="text-xl font-ubuntu text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:cursor-pointer transition-colors">Use cases</p>
-<p className="text-xl font-ubuntu text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:cursor-pointer transition-colors">Contact us</p>
+<a href="#pricing"><p className="text-xl font-ubuntu text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:cursor-pointer transition-colors">Pricing</p></a>
+<a href='#feature'> <p className="text-xl font-ubuntu text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:cursor-pointer transition-colors">Use cases</p></a>
+<a href="#footer"><p className="text-xl font-ubuntu text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:cursor-pointer transition-colors">Contact us</p></a>
 <p className="text-xl font-ubuntu text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:cursor-pointer transition-colors">FAQ</p>
 
 

@@ -6,7 +6,6 @@ import WhyChooseUs from '@/components/ui/land2'
 import FeatureHighlight from '@/components/ui/FeatureHighlight'
 import Pricing from '@/components/ui/pricing'
 import Footer from '@/components/ui/footer'
-import Profile from '@/components/profile'
 
 const Landing = () => {
   return (

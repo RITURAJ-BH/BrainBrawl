@@ -23,10 +23,7 @@ function App() {
       </Routes>
 
    
-      <WhyChooseUs />
-      <FeatureHighlight />
-      <Pricing />
-      <Footer />
+   
     </BrowserRouter>
     
   );

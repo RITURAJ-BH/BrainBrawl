@@ -4,6 +4,7 @@ import TriviaQuizSec from '@/components/TriviaQuizSec'
 import React from 'react'
 import Aurora from '../../y/Aurora/Aurora'
 import GenQuiz from '@/components/GenQuiz'
+import Footer from '@/components/ui/footer'
 
 const CreateQuiz = () => {
   return (
@@ -29,7 +30,8 @@ const CreateQuiz = () => {
   <hr className="my-8 h-1 w-full rounded-full border-0 bg-gradient-to-r from-[#00ffcc] via-[#3366ff] to-[#cc00ff] shadow-[0_0_10px_#00ffcc]" />
 <GenQuiz/>
 </div>
-
+<hr className='mt-10'/>
+<Footer/>
      </div>
   
   )

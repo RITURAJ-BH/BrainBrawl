@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from './ui/button'
 import { ChevronRight, Ghost } from 'lucide-react'
 import ThemeToggle from './ThemeToggle'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -13,7 +14,7 @@ const Navbar = () => {
         <a href="/" className='text-2xl font-bold ubuntu-bold'>Brain Brawl</a>
         </div>
         <div className="flex items-center gap-10 p-0">
-        <p className="text-xl font-ubuntu text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:cursor-pointer transition-colors">Quiz</p>
+        <p className="text-xl font-ubuntu text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:cursor-pointer transition-colors"><Link to ="/create-quiz">Quiz</Link></p>
 <p className="text-xl font-ubuntu text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:cursor-pointer transition-colors">Pricing</p>
 <p className="text-xl font-ubuntu text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:cursor-pointer transition-colors">Use cases</p>
 <p className="text-xl font-ubuntu text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:cursor-pointer transition-colors">Contact us</p>

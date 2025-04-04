@@ -3,7 +3,7 @@ import './App.css'
 import Landing from './pages/Landing'
 import CreateQuiz from './pages/CreateQuiz';
 import { useEffect } from 'react';
-        
+
 function App() {
   // Set theme once when app mounts
   useEffect(() => {

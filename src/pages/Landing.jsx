@@ -17,7 +17,6 @@ const Landing = () => {
             <FeatureHighlight />
             <Pricing />
             <Footer />
-            <Profile />
     </div>
   )
 }

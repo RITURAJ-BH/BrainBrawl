@@ -3,7 +3,9 @@ import { FaFacebook, FaTwitter, FaYoutube, FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="  bg-white dark:bg-black  text-gray-500 py-10 px-6">
+    <>
+    <hr />
+    <footer className="  bg-white dark:bg-black  text-gray-500 py-10 px-6" id="footer">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         
         <div>
@@ -44,6 +46,7 @@ const Footer = () => {
 
       </div>
     </footer>
+    </>
   );
 };
 

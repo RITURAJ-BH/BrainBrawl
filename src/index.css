@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lexend+Deca:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
-
+:root {
+  --color-1: 0 100% 63%;
+  --color-2: 270 100% 63%;
+  --color-3: 210 100% 63%;
+  --color-4: 195 100% 63%;
+  --color-5: 90 100% 63%;
+}
 @custom-variant dark (&:is(.dark *));
 .ubuntu-light {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
-
+*{
+  scroll-behavior: smooth;
+}
 .ubuntu-regular {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;

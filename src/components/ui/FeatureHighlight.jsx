@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const FeatureHighlight = () => {
   return (
-    <section className="py-16 px-6 text-center bg-white dark:bg-black transition-all duration-300">
+    <section className="py-16 px-6 text-center bg-white dark:bg-black transition-all duration-300" id="feature">
       <h2 className="text-4xl font-extrabold text-yellow-500 dark:text-yellow-400 mb-6">
         🚀 AI-Powered Quiz Generator
       </h2>

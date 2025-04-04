@@ -30,7 +30,6 @@ const CreateQuiz = () => {
   <hr className="my-8 h-1 w-full rounded-full border-0 bg-gradient-to-r from-[#00ffcc] via-[#3366ff] to-[#cc00ff] shadow-[0_0_10px_#00ffcc]" />
 <GenQuiz/>
 </div>
-<hr className='mt-10'/>
 <Footer/>
      </div>
   

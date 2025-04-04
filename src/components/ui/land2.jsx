@@ -1,4 +1,7 @@
+import { Bluetooth, ChevronRight } from "lucide-react";
 import React from "react";
+import { Button } from "./button";
+import { Link } from "react-router-dom";
 
 // Feature data
 const features = [
@@ -68,6 +71,7 @@ const WhyChooseUs = () => {
           </div>
         ))}
       </div>
+      <Button className="text-2xl mt-8 hover:cursor-pointer "><Link to="/create-quiz">Create Your Quiz</Link> <ChevronRight/></Button>
     </section>
   );
 };

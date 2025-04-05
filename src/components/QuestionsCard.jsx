@@ -38,10 +38,10 @@ const QuestionsCard = ({ questionData, Index, onNext,onCorrect }) => {
   }
 
   return (
-    <div className="my-10 flex justify-center">
-      <Card className="w-[91%] bg-white dark:bg-black flex flex-col items-center p-6 ubuntu-regular">
+    <div className="flex justify-center items-center">
+      <Card className="w-[91%] bg-white dark:bg-black flex flex-col items-center p-6 ubuntu-regular py-10 mt-[-100px]">
         <Label
-          className="text-3xl text-center mb-6"
+          className="text-2xl text-center mb-6 sm:text-3xl"
           dangerouslySetInnerHTML={{ __html: "Q" + (Index + 1) + " " + question }}
         />
 

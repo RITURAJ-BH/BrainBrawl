@@ -32,7 +32,7 @@ export default function PdfUploader() {
 
   return (
     <div className="flex flex-col items-center gap-4 mt-6 relative">
-      <label className="cursor-pointer w-full max-w-md rounded-xl border-2 border-dashed border-gray-300 bg-white p-6 text-center text-gray-600 hover:border-blue-500 hover:bg-blue-50 transition-colors dark:bg-black dark:text-white dark:hover:border-blue-400 dark:hover:bg-gray-900">
+      <label className="cursor-pointer w-[90%] max-w-md rounded-xl border-2 border-dashed border-gray-300 bg-white p-6 text-center text-gray-600 hover:border-blue-500 hover:bg-blue-50 transition-colors dark:bg-black dark:text-white dark:hover:border-blue-400 dark:hover:bg-gray-900">
         <input
           type="file"
           accept="application/pdf"

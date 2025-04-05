@@ -35,7 +35,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 const CustomQuizSec = () => {
-    const [num, setNum] = useState(10);
+    const [num, setNum] = useState(5);
 
     const handleCreditChange = (value) => {
         const numericValue = Number(value);
@@ -44,7 +44,7 @@ const CustomQuizSec = () => {
     };
   return (
     <div>
-<Card className="w-[400px] bg-white dark:bg-[#0d0d0d] text-black dark:text-white">
+<Card className="w-[380px] bg-white dark:bg-[#0d0d0d] text-black dark:text-white sm:w-[400px]">
       <CardHeader>
         <CardTitle>Any Category of Your Choice🤗</CardTitle>
         <CardDescription>Just Describe us about the Category we will create for you🤖</CardDescription>
@@ -56,7 +56,7 @@ const CustomQuizSec = () => {
                 <Label htmlFor="Number">Number of Questions</Label>
                 <Input
                         type="range"
-                        min="10"
+                        min="5"
                         max="20"
                         value={num}
                         onChange={(e) => handleCreditChange(e.target.value)}
@@ -64,7 +64,7 @@ const CustomQuizSec = () => {
                     />
                     <Input
                         type="number"
-                        min="10"
+                        min="5"
                         max="20"
                         value={num}
                         onChange={(e) => handleCreditChange(e.target.value)}

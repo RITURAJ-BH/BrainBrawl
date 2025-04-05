@@ -21,8 +21,8 @@ const CreateQuiz = () => {
   </div>
 
   <div className="relative z-10">
-    <h1 className="text-6xl text-center mb-10 text-white ubuntu-bold mt-10">Choose the way you wanna create your Quiz</h1>
-    <div className="flex flex-row justify-evenly">
+    <h1 className="text-3xl text-center mb-10 ubuntu-bold mt-10 sm:text-6xl text-white dark:text-black">Choose the way you wanna create your Quiz</h1>
+    <div className="flex flex-col justify-center gap-8 items-center sm:flex-row sm:justify-evenly">
       <TriviaQuizSec />
       <CustomQuizSec />
     </div>

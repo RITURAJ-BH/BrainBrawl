@@ -59,7 +59,7 @@ const Quiz = () => {
   return (
     <div>
         <Navbar/>
-        <div className="">
+        <div className="flex justify-center items-center min-h-screen">
         {currentQuestion ? (
           <QuestionsCard
             questionData={currentQuestion}
@@ -70,8 +70,10 @@ const Quiz = () => {
           />
         ) : (
             <>
+            <div className='flex flex-col items-center justify-center'>
           <div className="text-6xl ubuntu-bold text-center">Quiz Complete 🎉</div>
-            <p className='text-2xl ubuntu-regular text-center mt-10'>You Scored {score}</p>
+            <p className='text-2xl ubuntu-regular text-center mt-10'>You Scored {score} out of {currentQuestionIndex}</p>
+            </div>
         </>
         )}
       </div>

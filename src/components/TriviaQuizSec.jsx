@@ -37,7 +37,7 @@ import {
 import { PulsatingButton } from './magicui/pulsating-button'
 import { Link } from 'react-router-dom'
 const TriviaQuizSec = () => {
-    const [num, setNum] = useState(10);
+    const [num, setNum] = useState(5);
     const [category, setCategory] = useState("")
     const [difficulty, setDifficulty] = useState("easy")
     const [type, setType] = useState("multiple")
@@ -48,7 +48,7 @@ const TriviaQuizSec = () => {
     };
   return (
     <div>
-<Card className="w-[400px] bg-white dark:bg-[#0d0d0d] text-black dark:text-white">
+<Card className="w-[380px] bg-white dark:bg-[#0d0d0d] text-black dark:text-white sm:w-[400px]">
       <CardHeader>
         <CardTitle>Create a Basic Quiz🤔</CardTitle>
         <CardDescription>Choose the Number of Questions , a listed Category and get Started🚀</CardDescription>
@@ -60,7 +60,7 @@ const TriviaQuizSec = () => {
                 <Label htmlFor="Number">Number of Questions</Label>
                 <Input
                         type="range"
-                        min="10"
+                        min="5"
                         max="50"
                         value={num}
                         onChange={(e) => handleCreditChange(e.target.value)}
@@ -68,7 +68,7 @@ const TriviaQuizSec = () => {
                     />
                     <Input
                         type="number"
-                        min="10"
+                        min="5"
                         max="50"
                         value={num}
                         onChange={(e) => handleCreditChange(e.target.value)}

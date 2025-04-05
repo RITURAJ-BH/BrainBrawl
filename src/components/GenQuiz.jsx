@@ -8,7 +8,7 @@ const GenQuiz = () => {
   return (
     <div className='mb-10'>
         <MorphingText texts={["Think","Beyond"]}/>
-       <p className='text-center text-4xl mt-5 ubuntu-regular'>Upload the pdf of your content and we will create a Quiz for You</p>
+       <p className='text-center text-2xl mt-5 ubuntu-regular sm:text-4xl'>Upload the pdf of your content and we will create a Quiz for You</p>
        <PdfUploader/>
        <div className='flex justify-center mt-5'>
        <InteractiveHoverButton>Generate Quiz</InteractiveHoverButton>

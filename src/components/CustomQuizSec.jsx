@@ -34,9 +34,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { Link } from 'react-router-dom'
 const CustomQuizSec = () => {
     const [num, setNum] = useState(5);
-
+    const [category, setCategory] = useState("")
+    const [difficulty, setDifficulty] = useState("easy")
+    const [type, setType] = useState("multiple")
     const handleCreditChange = (value) => {
         const numericValue = Number(value);
             setNum(numericValue);
@@ -57,7 +60,7 @@ const CustomQuizSec = () => {
                 <Input
                         type="range"
                         min="5"
-                        max="20"
+                        max="50"
                         value={num}
                         onChange={(e) => handleCreditChange(e.target.value)}
                         className="w-full accent-blue"
@@ -65,42 +68,43 @@ const CustomQuizSec = () => {
                     <Input
                         type="number"
                         min="5"
-                        max="20"
+                        max="50"
                         value={num}
                         onChange={(e) => handleCreditChange(e.target.value)}
                         className="w-full p-2 border rounded-md mt-2"
                     />
             <Label htmlFor="category">Category</Label>
-<Input placeholder="Describe about your Category😎"/>
+<Input placeholder="Describe about your Category😎" onChange={(e) => setCategory(e.target.value)}/>
             </div>
             <div>
                 <Label className="mb-2">Choose Difficulty</Label>
-                <RadioGroup defaultValue="option-one" className="flex flex-row items-center justify-between">
+                <RadioGroup defaultValue="easy" className="flex flex-row items-center justify-between">
   <div className="flex items-center space-x-2">
-    <RadioGroupItem value="option-one" id="option-one" />
-    <Label htmlFor="option-one">Easy</Label>
+    <RadioGroupItem value="easy" id="easy" onChange={setDifficulty} />
+    <Label htmlFor="easy">Easy</Label>
+
   </div>
   <div className="flex items-center space-x-2">
-    <RadioGroupItem value="option-two" id="option-two" />
-    <Label htmlFor="option-two">Medium</Label>
+    <RadioGroupItem value="medium" id="medium" />
+    <Label htmlFor="medium">Medium</Label>
   </div>
   <div className="flex items-center space-x-2">
-    <RadioGroupItem value="option-three" id="option-three" />
-    <Label htmlFor="option-three">Hard</Label>
+    <RadioGroupItem value="hard" id="hard" />
+    <Label htmlFor="hard">Hard</Label>
   </div>
 </RadioGroup>
 
             </div>
             <div>
             <Label className="mb-2">Type</Label>
-                <RadioGroup defaultValue="option-one" className="flex flex-row items-center justify-evenly">
+                <RadioGroup defaultValue="multiple" className="flex flex-row items-center justify-evenly" onChange={setType}>
   <div className="flex items-center space-x-2">
-    <RadioGroupItem value="option-one" id="option-one" />
-    <Label htmlFor="option-one">MCQ</Label>
+    <RadioGroupItem value="multiple" id="multiple" />
+    <Label htmlFor="multiple">MCQ</Label>
   </div>
   <div className="flex items-center space-x-2">
-    <RadioGroupItem value="option-two" id="option-two" />
-    <Label htmlFor="option-two">True/False</Label>
+    <RadioGroupItem value="boolean" id="boolean" />
+    <Label htmlFor="boolean">True/False</Label>
   </div>
 </RadioGroup>
             </div>
@@ -108,7 +112,10 @@ const CustomQuizSec = () => {
         </form>
       </CardContent>
       <CardFooter className="flex justify-between">
-        <Button className="w-full hover:cursor-pointer">Start Quiz</Button>
+        <Button className="w-full hover:cursor-pointer">  <Link
+          to={`/quiz/custom?num=${num}&category=${category}&difficulty=${difficulty}&type=${type}`}
+  
+        >Start Quiz</Link></Button>
       </CardFooter>
     </Card>
 

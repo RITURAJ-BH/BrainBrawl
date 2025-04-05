@@ -22,7 +22,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing/>}/>
         <Route path='/create-quiz' element={<CreateQuiz/>}/>
-        <Route path='/quiz' element={<Quiz/>}/>
+        <Route path="/quiz/trivia" element={<Quiz />} />
+        <Route path="/quiz/custom" element={<Quiz />} />
         <Route path='loading' element={<Loading/>}/>
       </Routes>
 

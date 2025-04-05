@@ -6,6 +6,7 @@ import WhyChooseUs from '@/components/ui/land2'
 import FeatureHighlight from '@/components/ui/FeatureHighlight'
 import Pricing from '@/components/ui/pricing'
 import Footer from '@/components/ui/footer'
+import Faq from '@/components/faq'
 
 const Landing = () => {
   return (
@@ -15,6 +16,7 @@ const Landing = () => {
          <WhyChooseUs />
             <FeatureHighlight />
             <Pricing />
+            <Faq />
             <Footer />
     </div>
   )

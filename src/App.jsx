@@ -6,6 +6,8 @@ import { useEffect } from 'react';
 import ScrollToTop from './components/ScrollToTop';
 import Quiz from './pages/Quiz';
 import Loading from './components/Loading';
+import Profile from './pages/Profile.jsx';
+
 
 function App() {
   // Set theme once when app mounts
@@ -24,6 +26,7 @@ function App() {
         <Route path='/create-quiz' element={<CreateQuiz/>}/>
         <Route path='/quiz' element={<Quiz/>}/>
         <Route path='loading' element={<Loading/>}/>
+        <Route path='/profile' element={<Profile/>}/>
       </Routes>
 
    

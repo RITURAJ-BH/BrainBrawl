@@ -144,7 +144,7 @@ const TriviaQuizSec = () => {
       </CardContent>
       <CardFooter className="flex justify-center">
       <Link
-  to={`/quiz?num=${num}&category=${category}&difficulty=${difficulty}&type=${type}`}
+  to={`/quiz/trivia?num=${num}&category=${category}&difficulty=${difficulty}&type=${type}`}
   className="w-full"
 >
   <Button className="w-full hover:cursor-pointer">Start Quiz</Button>
